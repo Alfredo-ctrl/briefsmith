@@ -10,36 +10,36 @@
     <main class="shell">
       <header class="topbar">
         <a class="brand" href="#">
-          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-          <span>BriefSmith</span>
+          <span data-i18n="brand">BriefSmith</span>
         </a>
+        <button class="language-switch" type="button" aria-label="Switch language" aria-pressed="false"><span>EN</span><i></i><span>ES</span></button>
         <nav>
-          <a href="#brief">Brief</a>
-          <a href="#export">Export</a>
+          <a href="#brief" data-i18n="briefNav">Brief</a>
+          <a href="#export" data-i18n="exportNav">Export</a>
         </nav>
       </header>
 
-      <section class="hero">
+      <section class="hero" data-reveal>
         <div>
-          <p class="eyebrow">AI project planning tool</p>
-          <h1>Turn a messy idea into a buildable project brief.</h1>
-          <p class="lede">BriefSmith extracts the user, problem, AI angle, MVP scope, risks, and next steps from rough notes. It is built for students, builders, and portfolio projects that need clarity fast.</p>
+          <p class="eyebrow" data-i18n="eyebrow">AI project planning tool</p>
+          <h1 data-i18n="headline">Turn a messy idea into a buildable project brief.</h1>
+          <p class="lede" data-i18n="lede">BriefSmith extracts the user, problem, AI angle, MVP scope, risks, and next steps from rough notes. It is built for students, builders, and portfolio projects that need clarity fast.</p>
         </div>
         <aside class="score-card" aria-label="Idea score">
-          <span>Brief score</span>
+          <span data-i18n="briefScore">Brief score</span>
           <strong id="score">86</strong>
           <p id="scoreText">Strong enough to prototype.</p>
         </aside>
       </section>
 
-      <section class="workspace" id="brief">
+      <section class="workspace" id="brief" data-reveal>
         <div class="input-panel">
           <div class="panel-head">
-            <h2>Rough Idea</h2>
-            <button id="loadExample" type="button">Load Example</button>
+            <h2 data-i18n="roughIdea">Rough Idea</h2>
+            <button id="loadExample" type="button" data-i18n="loadExample">Load Example</button>
           </div>
           <textarea id="ideaInput" spellcheck="true">I want to build an app for students who are overwhelmed with homework and exams. They paste everything they have to do, and it helps them decide what to work on first. It should be simple, friendly, maybe use AI later, and work on mobile.</textarea>
-          <button id="buildBrief" class="primary" type="button">Build Brief</button>
+          <button id="buildBrief" class="primary" type="button" data-i18n="buildBrief">Build Brief</button>
         </div>
 
         <article class="brief-panel">
@@ -49,30 +49,30 @@
           </div>
           <div class="brief-grid">
             <section>
-              <h3>Promise</h3>
+              <h3 data-i18n="promise">Promise</h3>
               <p id="promise"></p>
             </section>
             <section>
-              <h3>Audience</h3>
+              <h3 data-i18n="audience">Audience</h3>
               <p id="audience"></p>
             </section>
             <section class="wide">
-              <h3>AI Angle</h3>
+              <h3 data-i18n="aiAngle">AI Angle</h3>
               <p id="aiAngle"></p>
             </section>
             <section>
-              <h3>MVP Scope</h3>
+              <h3 data-i18n="mvpScope">MVP Scope</h3>
               <ul id="mvp"></ul>
             </section>
             <section>
-              <h3>Risks</h3>
+              <h3 data-i18n="risks">Risks</h3>
               <ul id="risks"></ul>
             </section>
           </div>
         </article>
       </section>
 
-      <section class="export-row" id="export">
+      <section class="export-row" id="export" data-reveal>
         <pre id="textOutput"></pre>
       </section>
     </main>
