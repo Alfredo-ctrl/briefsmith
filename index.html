@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BriefSmith</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="#">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>BriefSmith</span>
+        </a>
+        <nav>
+          <a href="#brief">Brief</a>
+          <a href="#export">Export</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <p class="eyebrow">AI project planning tool</p>
+          <h1>Turn a messy idea into a buildable project brief.</h1>
+          <p class="lede">BriefSmith extracts the user, problem, AI angle, MVP scope, risks, and next steps from rough notes. It is built for students, builders, and portfolio projects that need clarity fast.</p>
+        </div>
+        <aside class="score-card" aria-label="Idea score">
+          <span>Brief score</span>
+          <strong id="score">86</strong>
+          <p id="scoreText">Strong enough to prototype.</p>
+        </aside>
+      </section>
+
+      <section class="workspace" id="brief">
+        <div class="input-panel">
+          <div class="panel-head">
+            <h2>Rough Idea</h2>
+            <button id="loadExample" type="button">Load Example</button>
+          </div>
+          <textarea id="ideaInput" spellcheck="true">I want to build an app for students who are overwhelmed with homework and exams. They paste everything they have to do, and it helps them decide what to work on first. It should be simple, friendly, maybe use AI later, and work on mobile.</textarea>
+          <button id="buildBrief" class="primary" type="button">Build Brief</button>
+        </div>
+
+        <article class="brief-panel">
+          <div class="panel-head">
+            <h2 id="briefTitle">StudentPilot</h2>
+            <span id="lensTag">Learning</span>
+          </div>
+          <div class="brief-grid">
+            <section>
+              <h3>Promise</h3>
+              <p id="promise"></p>
+            </section>
+            <section>
+              <h3>Audience</h3>
+              <p id="audience"></p>
+            </section>
+            <section class="wide">
+              <h3>AI Angle</h3>
+              <p id="aiAngle"></p>
+            </section>
+            <section>
+              <h3>MVP Scope</h3>
+              <ul id="mvp"></ul>
+            </section>
+            <section>
+              <h3>Risks</h3>
+              <ul id="risks"></ul>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <section class="export-row" id="export">
+        <pre id="textOutput"></pre>
+      </section>
+    </main>
+    <script src="src/brief-engine.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>

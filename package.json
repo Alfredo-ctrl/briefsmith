@@ -1,0 +1,32 @@
+{
+  "name": "briefsmith",
+  "version": "1.0.0",
+  "description": "Turn rough AI product ideas into clear project briefs from the browser or terminal.",
+  "private": false,
+  "bin": {
+    "briefsmith": "bin/briefsmith.js"
+  },
+  "files": [
+    "assets",
+    "bin",
+    "examples",
+    "src",
+    "index.html",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "python -m http.server 5180",
+    "cli": "node bin/briefsmith.js --demo",
+    "check": "node --check src/brief-engine.js && node --check src/app.js && node --check bin/briefsmith.js"
+  },
+  "keywords": [
+    "ai",
+    "productivity",
+    "project-planning",
+    "web-app",
+    "cli",
+    "portfolio"
+  ],
+  "author": "Alfredo Oliva",
+  "license": "MIT"
+}

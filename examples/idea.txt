@@ -1,0 +1,1 @@
+I want to build an app for students who are overwhelmed with homework and exams. They paste everything they have to do, and it helps them decide what to work on first. It should be simple, friendly, maybe use AI later, and work on mobile.
