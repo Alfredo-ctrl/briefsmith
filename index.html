@@ -29,6 +29,9 @@
           <span data-i18n="briefScore">Brief score</span>
           <strong id="score">86</strong>
           <p id="scoreText">Strong enough to prototype.</p>
+          <div class="parallax-frame score-parallax" aria-hidden="true">
+            <img src="assets/parallax-brief.svg" alt="" data-parallax data-orientation="up left" data-scale="1.2" data-delay="0.65">
+          </div>
         </aside>
       </section>
 
@@ -76,6 +79,8 @@
         <pre id="textOutput"></pre>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    <script src="src/parallax.js"></script>
     <script src="src/brief-engine.js"></script>
     <script src="src/app.js"></script>
   </body>
