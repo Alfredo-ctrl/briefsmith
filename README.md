@@ -1,3 +1,39 @@
+<!-- portfolio:start -->
+<p align="center">
+  <img src="assets/readme-hero.svg" alt="BriefSmith banner" width="100%" />
+</p>
+
+<h1 align="center">BriefSmith</h1>
+
+<p align="center"><strong>A project brief forge for turning rough product ideas into buildable plans.</strong></p>
+
+<p align="center">
+<img alt="focus: planning" src="https://img.shields.io/badge/focus-planning-2d936c?style=for-the-badge&labelColor=17231d" />
+  <img alt="output: briefs" src="https://img.shields.io/badge/output-briefs-2d936c?style=for-the-badge&labelColor=17231d" />
+  <img alt="mode: local" src="https://img.shields.io/badge/mode-local-2d936c?style=for-the-badge&labelColor=17231d" />
+</p>
+
+## Workshop Feel
+
+BriefSmith is framed as a practical workbench: the user brings a rough idea and leaves with a clearer build plan.
+
+## Outputs
+
+Generates project direction, scope, feature lists, risks, and export-friendly planning text.
+
+## Run It
+
+`npm install` then use the CLI or open the included web interface.
+
+## Portfolio Note
+
+This repository has its own visual identity inside the portfolio. The goal is that every project feels like a different product, not another copy of the same template.
+<!-- portfolio:end -->
+
+---
+
+## Existing Project Notes
+
 # BriefSmith
 
 BriefSmith turns rough AI product ideas into clear project briefs. It is built for students and builders who want to move from "I have an idea" to "I know what to build first."
